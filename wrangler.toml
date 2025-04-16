@@ -1,0 +1,20 @@
+name = "craig"
+main = "./dist/server/index.mjs"
+compatibility_date = "2025-04-04"
+compatibility_flags = [ "nodejs_compat" ]
+account_id = "6ef8d3cbe19975e93d994f25228488e7"
+
+assets = { directory = "./dist/public/", binding = "ASSETS" }
+
+[ai]
+binding = "AI"
+
+[triggers]
+crons = [ "* * * * *"]
+
+[[r2_buckets]]
+binding = 'BLOB'
+bucket_name = 'craig'
+
+[observability.logs]
+enabled = true
