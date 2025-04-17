@@ -1,6 +1,7 @@
 .nuxt
 .data
 .output
+.wrangler
 
 dist
 node_modules

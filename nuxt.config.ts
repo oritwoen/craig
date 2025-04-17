@@ -13,10 +13,11 @@ export default defineNuxtConfig({
   nitro: {
     experimental: {
       tasks: true,
+      // websocket: true,
     },
 
     scheduledTasks: {
-      '* * * * *': ['main'],
+      '*/10 * * * *': ['main'],
     },
   },
 
@@ -25,6 +26,8 @@ export default defineNuxtConfig({
     blob: true,
     workers: true,
   },
+
+  debug: true,
 
   eslint: {
     config: {
